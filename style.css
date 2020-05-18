@@ -8,7 +8,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* stylesheet starts here */
+/* stylesheet start */
+
+/* font-sizes changed from design sheet to better match design image */
 
 * {
     margin: 0;
@@ -26,14 +28,14 @@ img {
     display: block;
 }
 
-/* header starts */
+/* header start */
 
 header {
     background-image: url(assets/image-1@2x.png);
     background-size: cover;
     background-position: center;
     height: 90vh;
-    color: white;
+    color: #ffffff;
 }
 
 header nav {
@@ -59,7 +61,7 @@ header nav ul li {
 header nav ul li a {
     font: 600 16px 'Catamaran', sans-serif;
     line-height: 29px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 30px;
@@ -79,7 +81,7 @@ header h1 {
 header h2 {
     font: 26px 'Lato', sans-serif;
     letter-spacing: 1px;
-    color: white;
+    color: #ffffff;
     text-transform: lowercase;
     position: relative;
     top: 22vh;
@@ -98,13 +100,13 @@ header h2 {
 }
 
 .socials a {
-    color: white;
+    color: #ffffff;
     font-size: 24px;
 }
 
-/* header ends */
+/* header end */
 
-/* main starts */
+/* main start */
 
 main h2 {
     font: italic 700 36px 'Kanit', sans-serif;
@@ -116,21 +118,21 @@ main h2 {
 main p {
     font: 300 18px 'Roboto', sans-serif;
     line-height: 27px;
-    color: grey;
+    color: #808080;
     margin-top: 10px;
     margin-bottom: 36px;
 }
 
-button {
+/* button {
     background: #BA0621;
     font: italic 700 18px 'Kanit', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     padding: 10px;
     border: none;
     vertical-align: bottom;
-}
+} */
 
 .news h2 {
     margin: 90px;
@@ -200,24 +202,127 @@ button {
     background-position: center;
 }
 
-.oscar ul li {
-    display: inline-block;
+.oscar div {
+    width: calc(72%/3);
+    float: left;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
-.oscar ul li a {
-    font: italic 700 18px 'Kanit', sans-serif;
+.oscar div:first-child{
+    margin-left: 14%;
+}
+
+.oscar div:last-child {
+    margin-right: 14%;
+}
+
+.oscar i {
+    font-size: 50px;
+    color: #CC1D36;
+    margin-bottom: 20px;
+}
+
+.oscar a {
+    font: italic 700 26px 'Kanit', sans-serif;
     letter-spacing: 1px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/* main ends */
+.contact {
+    background-color: #6C0918;
+}
 
-/* footer starts */
+.contact-email {
+    width: 40%;
+    margin: 90px auto 90px 10%;
+    float: left;
+}
 
-/* footer ends */
+.contact-info {
+    width: 20%;
+    margin: 90px 6%;
+    float: left;
+}
 
-/* responsive design starts */
+.contact-links {
+    width: 8%;
+    margin: 90px 10% 90px auto;
+    float: right;
+}
 
-/* responsive design ends */
+.contact h3 {
+    font: italic 700 22px 'Kanit', sans-serif;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.contact p {
+    color: #ffffff;
+    margin: 10px auto;
+}
+
+.email-address input {
+    width: 70%;
+    font: 300 18px 'Roboto', sans-serif;
+    padding: 11px 30px;
+    border: none;
+}
+
+.contact-email button {
+    background-color: #000000;
+    font: italic 700 18px 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 8px 22px;
+    border: none;
+}
+
+.contact-info h3 {
+    margin-bottom: 16px;
+}
+
+.contact-links li {
+    list-style: none;
+    text-align: right;
+}
+
+.contact-links li a {
+    font: italic 700 18px 'Kanit', sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* main end */
+
+/* footer start */
+
+footer {
+    background-color: #0B0101;
+}
+
+footer p {
+    font: 400 16px 'Roboto', sans-serif;
+    line-height: 29px;
+    color: #ffffff;
+    padding: 4px;
+    text-align: center;
+}
+
+/* footer end */
+
+/* responsive design start */
+
+/* responsive design end */
+
+/* stylesheet end */
