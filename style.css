@@ -67,6 +67,10 @@ header nav ul li a {
     margin-left: 30px;
 }
 
+.hamburger {
+    display: none;
+}
+
 header h1 {
     font: italic 700 100px 'Kanit', sans-serif;
     line-height: 86px;
@@ -120,71 +124,86 @@ main p {
     line-height: 27px;
     color: #808080;
     margin-top: 10px;
-    margin-bottom: 36px;
 }
 
-/* button {
-    background: #BA0621;
-    font: italic 700 18px 'Kanit', sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    vertical-align: bottom;
-} */
-
 .news h2 {
-    margin: 90px;
+    margin: 90px auto;
     text-align: center;
 }
 
-.news img {
-    width: calc(33% - 20px);
-    display: inline-block;
+.news-image img {
+    width: calc(33% - 24px);
+    float: left;
 }
 
-.news img:nth-child(2) {
-    margin: 0 30px;
+.news-image img:nth-child(2) {
+    margin: 0 36px;
 }
 
 .highlight {
     margin: 90px auto;
 }
 
-.highlight img {
+.highlight-image {
     width: 25%;
     float: left;
     margin-top: 8px;
     margin-right: 36px;
 }
 
-.grid img {
+.highlight-text {
+    width: calc(75% - 36px);
+    float: left;
+}
+
+.highlight p {
+    margin-bottom: 48px;
+}
+
+.highlight a,
+.grid a {
+    background: #BA0621;
+    font: italic 700 18px 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 16px;
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-image1,
+.grid-image2 {
     width: 50%;
 }
 
 .grid h2 {
-    width: 400px;
+    width: 80%;
 }
 
 .grid-text1,
 .grid-text2 {
     margin-top: 140px;
+    margin-bottom: 22px;
     width: calc(40% - 90px);
 }
 
 .grid-text1,
-.grid-image2 img {
+.grid-image2 {
     float: left;
 }
 
-.grid-image1 img,
+.grid-image1,
 .grid-text2 {
     float: right;
 }
 
 .grid-text1 {
     margin-left: 10%;
+    margin-right: 90px;
 }
 
 .grid-text2 {
@@ -193,7 +212,7 @@ main p {
 }
 
 .grid p {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
 }
 
 .oscar {
@@ -210,11 +229,15 @@ main p {
     margin-bottom: 90px;
 }
 
-.oscar div:first-child{
+.oscar-shop {
     margin-left: 14%;
 }
 
-.oscar div:last-child {
+.oscar-community {
+    display: none;
+}
+
+.oscar-events {
     margin-right: 14%;
 }
 
@@ -322,6 +345,248 @@ footer p {
 /* footer end */
 
 /* responsive design start */
+
+@media (max-width: 650px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    header {
+        background-position: 36%;
+        height: 620px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header h1 {
+        font: italic 700 66px 'Kanit', sans-serif;
+        line-height: 56px;
+        width: 200px;
+        top: 240px;
+        margin-left: 10%;
+    }
+
+    header h2 {
+        font: 16px 'Lato', sans-serif;
+        top: 200px;
+        margin-left: 10%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger i {
+        float: right;
+        font-size: 30px;
+        margin-right: 5%;
+    }
+
+    main h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .news h2 {
+        margin: 40px auto;
+    }
+
+    .news-image img:last-child {
+        display: none;
+    }
+
+    .news-image img {
+        width: calc(50% - 30px);
+    }
+
+    .news-image img:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    .news-image img:first-child {
+        margin-left: 20px;
+    }
+
+    .highlight {
+        margin: 80px auto;
+    }
+
+    .highlight-image {
+        width: calc(100% - 40px);
+        float: none;
+        margin: 0 20px 30px 20px;
+    }
+
+    .highlight-image img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .highlight-text {
+        width: calc(100% - 40px);
+        float: none;
+        margin: 0 20px;
+    }
+
+    .highlight p {
+        margin-top: 30px;
+        line-height: 30px;
+    }
+
+    .highlight a {
+        padding: 20px 40px;
+    }
+
+    .grid-image1,
+    .grid-image2 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        float: none;
+    }
+
+    .grid-text1,
+    .grid-text2 {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        float: none;
+        text-align: center;
+    }
+
+    .grid h2 {
+        width: calc(100% - 120px);
+        margin: 0 60px;
+    }
+
+    .grid img {
+        height: 230px;
+        object-fit: cover; 
+    }
+
+    .grid p {
+        text-align: center;
+        margin: 10px 20px 40px 20px;
+        line-height: 30px;
+    }
+
+    .grid-text1,
+    .grid-text2 {
+        margin-bottom: 60px;
+    }
+
+    .grid-text1 a,
+    .grid-text2 a {
+        padding: 12px 24px;
+    }
+
+    .oscar {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .oscar div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        float: none;
+        width: 100%;
+    }
+
+    .oscar-shop {
+        margin-left: 0;
+    }
+
+    .oscar-jobs {
+        display: none;
+    }
+
+    .oscar-community {
+        display: block;
+    }
+
+    .oscar-events {
+        margin-right: 0;
+    }
+
+    .oscar-shop i {
+        margin-top: 60px;
+    }
+
+    .contact-email {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        padding-top: 50px;
+        float: none;
+    }
+
+    .contact-email h3,
+    .contact-email p,
+    .contact-email input,
+    .contact-email button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact h3 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .contact-email p {
+        line-height: 30px;
+    }
+
+    .contact-email input {
+        padding: 16px;
+    }
+
+    .contact-email button {
+        font-size: 20px;
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .contact-info {
+        width: calc(60% - 20px);
+        margin: 30px 0 20px 20px;
+    }
+
+    .contact-info h3 {
+        margin-bottom: 30px;
+    }
+
+    .contact-info p {
+        line-height: 22px;
+    }
+
+    .contact-links {
+        width: calc(40% - 20px);
+        margin: 30px 20px 20px 0;
+    }
+
+    .contact-links li:nth-child(2),
+    .contact-links li:nth-child(3) {
+        padding: 2px 0;
+    }
+
+    .contact-links li a {
+        font-size: 20px;
+    }
+
+    footer p {
+        padding: 10px;
+    }
+}
 
 /* responsive design end */
 
