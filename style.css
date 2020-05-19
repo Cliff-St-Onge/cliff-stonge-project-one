@@ -387,9 +387,11 @@ footer p {
         display: block;
     }
 
-    .hamburger i {
-        float: right;
+    .hamburger a {
+        text-decoration: none;
+        color: #ffffff;
         font-size: 30px;
+        float: right;
         margin-right: 5%;
     }
 
